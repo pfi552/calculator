@@ -158,6 +158,20 @@
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>3.11.0.3922</version>
             </plugin>
+<!-- Failsafe : tests d'intégration (*IT.java) -->
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-failsafe-plugin</artifactId>
+    <version>3.2.5</version>
+    <executions>
+        <execution>
+            <goals>
+                <goal>integration-test</goal>
+                <goal>verify</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
         </plugins>
     </build>
 
